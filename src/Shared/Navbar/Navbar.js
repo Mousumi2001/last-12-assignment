@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/AuthProvider';
 
 const Navbar = () => {
+    const { user } = useContext(AuthContext);
     return (
         <div>
             <div>
@@ -25,11 +27,19 @@ const Navbar = () => {
                     <div className="navbar-end hidden lg:flex">
                         <ul className="menu menu-horizontal p-0">
                             <li><Link to='/'>Home</Link></li>
-                            <li tabIndex={0}><Link to='/login'>Login</Link></li>
-                            <li><Link to='/signup'>SignUp</Link></li>
                             <li><Link to='/blog'>Blog</Link></li>
-                            <li><Link to='/dashboard'>Dashboard</Link></li>
-                            <li><Link to=''>LogOut</Link></li>
+                            {
+                                user?.email ?
+                                    <>
+                                        <li><Link to='/dashboard'>Dashboard</Link></li>
+                                        <li><Link to=''>LogOut</Link></li>
+                                    </>
+                                    :
+                                    <>
+                                        <li tabIndex={0}><Link to='/login'>Login</Link></li>
+                                        <li><Link to='/signup'>SignUp</Link></li>
+                                    </>
+                            }
                         </ul>
                     </div>
                 </div>
