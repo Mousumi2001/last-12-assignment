@@ -28,6 +28,8 @@ const Navbar = () => {
                             <li tabIndex={0}><Link to='/login'>Login</Link></li>
                             <li><Link to='/signup'>SignUp</Link></li>
                             <li><Link to='/blog'>Blog</Link></li>
+                            <li><Link to='/dashboard'>Dashboard</Link></li>
+                            <li><Link to=''>LogOut</Link></li>
                         </ul>
                     </div>
                 </div>
