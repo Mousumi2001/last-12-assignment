@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 
 const Login = () => {
@@ -37,6 +38,7 @@ const Login = () => {
                             </label>
                             <input type='password' {...register("password")} placeholder="password" className="input input-bordered w-full max-w-xs" />
                         </div>
+                        <p>Create a new account? <Link className='font-bold text-md' to='/signup'>SignUp</Link></p>
                         <br />
                         <input type="submit" className='btn btn-outline w-full' />
                     </form>
