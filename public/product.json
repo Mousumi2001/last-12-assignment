@@ -1,0 +1,101 @@
+[
+    {
+        "category_id": "01",
+        "picture": "https://tse3.mm.bing.net/th?id=OIP.7yv9QPStya-eV2jpbZllXwHaE8&pid=Api&P=0",
+        "name": "Wood Sofa",
+        "loction": "Dhaka",
+        "resalePrice": "40000",
+        "originalPrice": "100000",
+        "years of use": "7 Month",
+        "post-time": "11.11.2022",
+        "seller": "Korim Hossain"
+    },
+    {
+        "category_id": "01",
+        "picture": "https://tse1.mm.bing.net/th?id=OIP.equNbJNWOAfupW1iHFxqmAHaE3&pid=Api&P=0",
+        "name": "Sofa table",
+        "loction": "Gazipur",
+        "resalePrice": "80000",
+        "originalPrice": "20000",
+        "years of use": "1.5 Year",
+        "post-time": "25.10.2022",
+        "seller": "Joy Hasan"
+    },
+    {
+        "category_id": "01",
+        "picture": "https://tse4.mm.bing.net/th?id=OIP.WnI5_nHtZhl_dK0yctE5awHaGS&pid=Api&P=0",
+        "name": "TV Cabinet",
+        "loction": "Cumilla",
+        "resalePrice": "10000",
+        "originalPrice": "30000",
+        "years of use": "1 Years",
+        "post-time": "15.11.2022",
+        "seller": "Jahid Khan"
+    },
+    {
+        "category_id": "02",
+        "picture": "https://i.ebayimg.com/00/s/MTAyNFg3Njg=/z/WxQAAOSwPCFdzbVk/$_86.JPG",
+        "name": "Wood Bed",
+        "loction": "Dhaka",
+        "resalePrice": "25000",
+        "originalPrice": "60000",
+        "years of use": "10 Month",
+        "post-time": "02.11.2022",
+        "seller": "Tahmina Akter"
+    },
+    {
+        "category_id": "02",
+        "picture": "https://tse2.mm.bing.net/th?id=OIP.QuRlbWAfaxpUnyxSIyhUtQHaJl&pid=Api&P=0",
+        "name": "Mirror Dresser",
+        "loction": "Dhaka",
+        "resalePrice": "15000",
+        "originalPrice": "35000",
+        "years of use": "2 Year",
+        "post-time": "20.11.2022",
+        "seller": "Saddam Hossain"
+    },
+    {
+        "category_id": "02",
+        "picture": "https://tse3.mm.bing.net/th?id=OIP.IWJCDwlO-zAphbu6--xneAHaHa&pid=Api&P=0",
+        "name": "Accent Chair",
+        "loction": "Dhaka",
+        "resalePrice": "4000",
+        "originalPrice": "10000",
+        "years of use": "1.5 Year",
+        "post-time": "10.9.2022",
+        "seller": "Shovo "
+    },
+    {
+        "category_id": "03",
+        "picture": "https://tse3.mm.bing.net/th?id=OIP.WTPtsPMsLSoksfnA9He0OQHaFH&pid=Api&P=0",
+        "name": "Dining Table",
+        "loction": "Dhaka",
+        "resalePrice": "40000",
+        "originalPrice": "90000",
+        "years of use": "8 Month",
+        "post-time": "25.11.2022",
+        "seller": "Ayman Sadik"
+    },
+    {
+        "category_id": "03",
+        "picture": "https://tse3.mm.bing.net/th?id=OIP.EUuXwQrGtFgM4adC84VEgwHaFl&pid=Api&P=0",
+        "name": "Dining Table",
+        "loction": "Dhaka",
+        "resalePrice": "30000",
+        "originalPrice": "80000",
+        "years of use": "2 Years",
+        "post-time": "11.11.2022",
+        "seller": "Jomi Akter"
+    },
+    {
+        "category_id": "03",
+        "picture": "https://tse4.mm.bing.net/th?id=OIP.01JifMlRvUFr-1P0GuxoPwHaFx&pid=Api&P=0",
+        "name": "Dining Table",
+        "resalePrice": "50000",
+        "loction": "Dhaka",
+        "originalPrice": "70000",
+        "years of use": "1 Years",
+        "post-time": "20.11.2022",
+        "seller": "Monir Hossani"
+    }
+]

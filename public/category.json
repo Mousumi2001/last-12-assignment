@@ -1,0 +1,17 @@
+[
+    {
+        "id": "01",
+        "category": "Drawing room furniture",
+        "img": "https://tse4.mm.bing.net/th?id=OIP.lHQOFXMLiphVpAYhYR_RYAHaF0&pid=Api&P=0"
+    },
+    {
+        "id": "02",
+        "category": "Bed room furniture",
+        "img": "https://tse3.mm.bing.net/th?id=OIP.GWv5Doa3ZcTKAVwSrTN7vAHaFB&pid=Api&P=0"
+    },
+    {
+        "id": "03",
+        "category": "Dining room furniture",
+        "img": "https://tse2.mm.bing.net/th?id=OIP.ISbEFj5le_3C4fJziryHSAHaF4&pid=Api&P=0"
+    }
+]
