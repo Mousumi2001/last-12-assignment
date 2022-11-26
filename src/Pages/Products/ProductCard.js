@@ -1,17 +1,21 @@
 import React from 'react';
 
 const ProductCard = ({ product }) => {
-    const { name } = product;
+    const { name, picture, loction, resalePrice, originalPrice, yearsofuse, posttime, seller } = product;
 
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+            <div className="card h-3/4 lg:m-10 bg-base-100 shadow-xl">
+                <figure><img src={picture} alt="Shoes" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{name}</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <h2 className="card-title">Furniture: {name}</h2>
+                    <p>Seller: {seller}</p>
+                    <p>Location: {loction}</p>
+                    <p>OriginalPrice: {originalPrice}</p>
+                    <p>ResalePrice: {resalePrice}</p>
+                    <p>PostTime: {posttime}</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn btn-black">Book Now</button>
                     </div>
                 </div>
             </div>
