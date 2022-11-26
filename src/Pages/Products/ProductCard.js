@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, setCategoryProduct }) => {
     const { name, picture, loction, resalePrice, originalPrice, yearsofuse, posttime, seller } = product;
 
     return (
@@ -15,7 +15,9 @@ const ProductCard = ({ product }) => {
                     <p>ResalePrice: {resalePrice}</p>
                     <p>PostTime: {posttime}</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-black">Book Now</button>
+                        <label htmlFor="booking-modal"
+                            onClick={() => setCategoryProduct(product)}
+                            className="btn btn-black">Book Now</label>
                     </div>
                 </div>
             </div>
