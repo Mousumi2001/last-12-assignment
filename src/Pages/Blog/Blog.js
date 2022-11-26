@@ -2,11 +2,11 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div>
+        <div className='grid grid-cols-2 gap-14 p-9'>
 
             {/* question no-1 */}
-            <div>
-                <h1>
+            <div className='p-8 '>
+                <h1 className='p-3 text-2xl'>
                     What are the different ways to manage a state in a React application?
                 </h1>
                 <p>

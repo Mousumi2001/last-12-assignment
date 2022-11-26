@@ -1,3 +1,4 @@
+import { async } from "@firebase/util";
 import { createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "../Layout/DashboardLayout";
 import Main from "../Layout/Main";
@@ -33,8 +34,10 @@ const router = createBrowserRouter([
             },
             {
                 path: '/products/:id',
-                element: <Products></Products>
+                element: <Products></Products>,
+                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
             }
+
         ]
     },
     {

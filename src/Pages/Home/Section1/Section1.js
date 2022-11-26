@@ -7,7 +7,7 @@ const Section1 = () => {
             "background-size": "cover",
             "background-repeat": "no-repeat"
         }} className="  h-[500px] ">
-            <div className=''>
+            <div className='pt-20 pl-20'>
                 <h1 className='text-6xl font-bold text-white'>Welcome to my<br /> website</h1>
                 <p className='text-3xl text-white'>In this website you have found<br /> best second hand furniture.</p>
             </div>
