@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../context/AuthProvider';
+import toast from 'react-hot-toast';
 
 const ProductBooking = ({ categoryProduct, setCategoryProduct }) => {
     const { name, picture, loction, resalePrice, originalPrice, yearsofuse, posttime, seller } = categoryProduct;
@@ -23,6 +24,7 @@ const ProductBooking = ({ categoryProduct, setCategoryProduct }) => {
         }
 
         console.log(booking)
+        toast.success('booking product successfully')
         setCategoryProduct(null)
 
     }
