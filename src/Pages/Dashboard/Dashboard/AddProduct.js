@@ -27,7 +27,7 @@ const AddProduct = () => {
                             </div>
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
-                                    <span className="label-text">pricc</span>
+                                    <span className="label-text">price</span>
                                 </label>
                                 <input type='text' {...register("price")} placeholder="price" className="input input-bordered w-full max-w-xs" />
                             </div>
@@ -41,13 +41,13 @@ const AddProduct = () => {
                                 <label className="label">
                                     <span className="label-text">Phone Number</span>
                                 </label>
-                                <input type='text' {...register("phone")} placeholder="phone number" className="input input-bordered w-full max-w-xs" />
+                                <input type='text' {...register("phone")} placeholder="phone_number" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
                                     <span className="label-text">product category</span>
                                 </label>
-                                <input type='text' {...register("product-category")} placeholder="product category" className="input input-bordered w-full max-w-xs" />
+                                <input type='text' {...register("product-category")} placeholder="product_category" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">
@@ -59,7 +59,7 @@ const AddProduct = () => {
                                 <label className="label">
                                     <span className="label-text">Year of purchase</span>
                                 </label>
-                                <input type='text' {...register("Year of purchase")} placeholder="Year of purchase" className="input input-bordered w-full max-w-xs" />
+                                <input type='text' {...register("Year of purchase")} placeholder="Year_of_purchase" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <br />
 

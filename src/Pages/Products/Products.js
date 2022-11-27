@@ -21,6 +21,7 @@ const Products = () => {
                 categoryProduct &&
                 <ProductBooking
                     categoryProduct={categoryProduct}
+                    setCategoryProduct={setCategoryProduct}
                 ></ProductBooking>}
         </div>
     );

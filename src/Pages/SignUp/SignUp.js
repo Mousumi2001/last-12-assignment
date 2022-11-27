@@ -31,19 +31,19 @@ const SignUp = () => {
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type='text' {...register("name")} placeholder="name" className="input input-bordered w-full max-w-xs" />
+                            <input type='text' {...register("name")} placeholder="name" className="inpu border-b-2 border-black border-l-2 p-2 border-black  w-full max-w-xs" />
                         </div>
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type='email' {...register("email")} placeholder="email" className="input input-bordered w-full max-w-xs" />
+                            <input type='email' {...register("email")} placeholder="email" className="inpu border-b-2 border-black border-l-2 p-2 border-black  w-full max-w-xs" />
                         </div>
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type='password' {...register("password")} placeholder="password" className="input input-bordered w-full max-w-xs" />
+                            <input type='password' {...register("password")} placeholder="password" className="inpu border-b-2 border-black border-l-2 p-2 border-black  w-full max-w-xs" />
                         </div>
                         <br />
 
