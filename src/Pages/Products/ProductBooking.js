@@ -9,6 +9,7 @@ const ProductBooking = ({ categoryProduct, setCategoryProduct }) => {
     const handleBooking = event => {
         event.preventDefault();
         const form = event.target;
+        const name = form.name.value;
         const email = form.email.value;
         const itemName = form.itemName.value;
         const price = form.price.value;
@@ -16,6 +17,7 @@ const ProductBooking = ({ categoryProduct, setCategoryProduct }) => {
         const phone = form.phone.value;
 
         const booking = {
+            name,
             email,
             itemName,
             price,
@@ -23,9 +25,26 @@ const ProductBooking = ({ categoryProduct, setCategoryProduct }) => {
             phone
         }
 
+
+        //post booked product
+        fetch('https://assignment-12-server-lime.vercel.app/orders', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/JSON'
+            },
+            body: JSON.stringify(booking)
+        })
+            .then(res => res.json())
+            .then(data => {
+                // if (data.acknowledge) {
+                //     setCategoryProduct(null)
+                //     toast.success('booking product successfully')
+                // }
+                console.log(data)
+            })
+
         console.log(booking)
-        toast.success('booking product successfully')
-        setCategoryProduct(null)
+
 
     }
 
@@ -37,6 +56,8 @@ const ProductBooking = ({ categoryProduct, setCategoryProduct }) => {
                     <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <h3 className="text-lg font-bold">{name}</h3>
                     <form onSubmit={handleBooking} className='grid grid-cols-1 gap-2 mt-6'>
+                        <input name='name' type="text" placeholder="Type here" value={user?.displayName}
+                            disabled className="input input-bordered w-full " />
                         <input name='email' type="text" placeholder="Type here" value={user?.email}
                             disabled className="input input-bordered w-full " />
                         <input name='itemName' type="text" placeholder="Type here" value={name} disabled className="input input-bordered w-full " />

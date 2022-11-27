@@ -1,6 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
+import toast from 'react-hot-toast';
+
 
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
@@ -8,6 +10,7 @@ const AddProduct = () => {
 
     const handleSend = data => {
         console.log(data)
+        toast.success('create product successfully')
     }
     return (
         <div>
@@ -47,7 +50,7 @@ const AddProduct = () => {
                                 <label className="label">
                                     <span className="label-text">product category</span>
                                 </label>
-                                <input type='text' {...register("product-category")} placeholder="product_category" className="input input-bordered w-full max-w-xs" />
+                                <input type='text' {...register("category_id")} placeholder="category_id" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div className="form-control w-full max-w-xs">
                                 <label className="label">

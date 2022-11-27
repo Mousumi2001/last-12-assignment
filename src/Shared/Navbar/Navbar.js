@@ -28,7 +28,10 @@ const Navbar = () => {
                                 <li><a>Item 3</a></li>
                             </ul>
                         </div>
-                        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                        <div className='flex'>
+                            <img className='w-12 h-12' src='https://tse4.mm.bing.net/th?id=OIP.N5llMZ-Pmp-5mUqsjoLXSQHaHa&pid=Api&P=0' alt='' />
+                            <a className="btn p-0 btn-ghost normal-case text-xl">Old<span className='font-bold text-blue-500'>Furniture</span></a>
+                        </div>
                     </div>
 
 
