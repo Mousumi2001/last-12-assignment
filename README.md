@@ -1,10 +1,18 @@
 # Website name:-
-
+--OldFurniture
 
 # Website Link:-
 https://last-assignment-2e3dd.web.app/
 
 # Website details:--
+o.the website name is oldfurniture.
+o.In this website we found second hand furniture.
+o.this website made by  tailwind css component and daysiUI etc.
+o.install some library:--
+ *react-hot-toast
+ *react-router-dom
+ *react-hook-form
+o.we also used firebase and mongodb database.
 
 
 
