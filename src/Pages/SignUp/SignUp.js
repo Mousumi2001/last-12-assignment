@@ -3,11 +3,13 @@ import toast from 'react-hot-toast';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const SignUp = () => {
     const { register, handleSubmit } = useForm();
-    const { createUser, updateUser } = useContext(AuthContext);
-    const [signUpError, setSignUpError] = useState('')
+    const { createUser, updateUser, googleSign } = useContext(AuthContext);
+    const [signUpError, setSignUpError] = useState('');
+    const provider = new GoogleAuthProvider();
 
 
     const handleSignUp = data => {
@@ -30,6 +32,16 @@ const SignUp = () => {
                 console.log(error)
                 setSignUpError(error.message)
             })
+    }
+
+
+    const handleGoogle = () => {
+        googleSign(provider)
+            .then(result => {
+                const user = result.user;
+                console.log(user)
+            })
+            .catch(error => console.error(error))
     }
 
 
@@ -71,7 +83,7 @@ const SignUp = () => {
                         {signUpError && <p className='text-red-600'>{signUpError}</p>}
                     </form>
                     <br />
-                    <button className='btn btn-black w-full'>Login With Google</button>
+                    <button onClick={handleGoogle} className='btn btn-black w-full'>Login With Google</button>
                 </div>
             </div >
         </div>
