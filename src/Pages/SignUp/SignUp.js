@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 
@@ -10,6 +10,7 @@ const SignUp = () => {
     const { createUser, updateUser, googleSign } = useContext(AuthContext);
     const [signUpError, setSignUpError] = useState('');
     const provider = new GoogleAuthProvider();
+    const navigate = useNavigate();
 
 
     const handleSignUp = data => {
@@ -25,12 +26,32 @@ const SignUp = () => {
                     displayName: data.name
                 }
                 updateUser(userInfo)
-                    .then(() => { })
+                    .then(() => {
+                        saveUser(data.name, data.email)
+                    })
                     .catch(err => console.log(err))
             })
             .catch(error => {
                 console.log(error)
                 setSignUpError(error.message)
+            })
+    }
+
+
+    const saveUser = (name, email) => {
+        const user = { name, email };
+
+        fetch('https://assignment-12-server-lime.vercel.app/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                navigate('/')
             })
     }
 
@@ -46,7 +67,7 @@ const SignUp = () => {
 
 
     return (
-        <div className='m-20'>
+        <div className='my-20  '>
             <div className='h-[400px] flex justify-center items-center'>
                 <div className='w-96 p-7'>
                     <h2 className='text-2xl'>SignUp Into Your Account</h2>

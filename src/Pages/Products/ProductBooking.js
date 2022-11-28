@@ -27,24 +27,21 @@ const ProductBooking = ({ categoryProduct, setCategoryProduct }) => {
 
 
         //post booked product
-        fetch('https://assignment-12-server-lime.vercel.app/orders', {
+        fetch('https://assignment-12-server-lime.vercel.app/bookings', {
             method: 'POST',
             headers: {
-                'content-type': 'application/JSON'
+                'content-type': 'application/json'
             },
             body: JSON.stringify(booking)
         })
             .then(res => res.json())
             .then(data => {
-                // if (data.acknowledge) {
-                //     setCategoryProduct(null)
-                //     toast.success('booking product successfully')
-                // }
                 console.log(data)
             })
 
-        console.log(booking)
-
+        // console.log(booking)
+        setCategoryProduct(null)
+        toast.success('booking product successfully')
 
     }
 

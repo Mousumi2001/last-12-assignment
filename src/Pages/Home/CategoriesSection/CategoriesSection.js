@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import Spinner from '../../../Shared/Spinner/Spinner';
+import { AuthContext } from '../../../context/AuthProvider';
 
 const CategoriesSection = ({ category }) => {
     const { img, category: categoryName, id } = category;
+    const { loading } = useContext(AuthContext);
+
+    if (loading) {
+        return <Spinner></Spinner>
+    }
+
     return (
         <div className="card h-3/4 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">

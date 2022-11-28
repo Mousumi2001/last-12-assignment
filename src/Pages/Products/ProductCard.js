@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../context/AuthProvider';
+import Spinner from '../../Shared/Spinner/Spinner';
 
 const ProductCard = ({ product, setCategoryProduct }) => {
     const { name, picture, loction, resalePrice, originalPrice, yearsofuse, posttime, seller } = product;
+    const { loading } = useContext(AuthContext);
+
+
+    if (loading) {
+        return <Spinner></Spinner>
+    }
 
     return (
         <div>

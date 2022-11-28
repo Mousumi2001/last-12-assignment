@@ -4,7 +4,7 @@ const Blog = () => {
     return (
         <div>
             <h1 className='text-3xl font-bold p-6 text-center'>Some Question and Answer:</h1>
-            <div className='grid grid-cols-2 gap-20 p-9'>
+            <div className='grid lg:grid-cols-2 gap-20 p-9'>
 
                 {/* question no-1 */}
                 <div className='p-8  border-x-4 border-pink-500 border-t-4 border-blue-400'>

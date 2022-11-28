@@ -10,7 +10,7 @@ const DashboardLayout = () => {
             <div className="drawer drawer-end">
                 <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
-                    <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary ml-20">Open drawer</label>
+                    <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary lg:ml-20">Open drawer</label>
 
                     <Outlet></Outlet>
                 </div>

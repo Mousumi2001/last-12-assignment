@@ -14,6 +14,8 @@ import Login from "../Pages/Login/Login";
 import NotFound from "../Pages/NotFound/NotFound";
 import Products from "../Pages/Products/Products";
 import SignUp from "../Pages/SignUp/SignUp";
+import PrivateRoute from "../Router/PrivateRoute";
+
 
 const router = createBrowserRouter([
     {
@@ -38,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/products/:id',
-                element: <Products></Products>,
+                element: <PrivateRoute><Products></Products></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://assignment-12-server-lime.vercel.app/products/${params.id}`)
             }
 
